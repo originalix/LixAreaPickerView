@@ -9,11 +9,14 @@
 
 import UIKit
 
+/// pickerView滑动后，更新数据
 public protocol LixAreaPickerDelegate {
     func areaPickerDidUpdate(sender: LixAreaPickerView)
 }
 
 public class LixAreaPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    //创建省市结构体
     struct Province {
         let name: String
         let cities: [LixCity]
@@ -24,6 +27,7 @@ public class LixAreaPickerView: UIPickerView, UIPickerViewDataSource, UIPickerVi
         let districts: [String]
     }
     
+    //PickerView展示类型
     public enum LixAreaPickerType {
         case Province
         case City
@@ -75,7 +79,7 @@ public class LixAreaPickerView: UIPickerView, UIPickerViewDataSource, UIPickerVi
         }
     }
     
-    
+    //MARK: - 加载文件数据 解析
     private lazy var subdivisionsData: [Province] = {
         let podBundle = NSBundle(forClass: self.classForCoder)
         
@@ -117,7 +121,6 @@ public class LixAreaPickerView: UIPickerView, UIPickerViewDataSource, UIPickerVi
     }
 
     //MARK: view life cycle
-    
     override public func didMoveToWindow() {
         super.didMoveToWindow()
         
@@ -128,7 +131,6 @@ public class LixAreaPickerView: UIPickerView, UIPickerViewDataSource, UIPickerVi
     }
     
     //MARK: init
-    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -147,7 +149,6 @@ public class LixAreaPickerView: UIPickerView, UIPickerViewDataSource, UIPickerVi
     }
     
     //MARK: - Picker view data source
-    
     public func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         switch pickerType {
         case .Province:
@@ -173,7 +174,6 @@ public class LixAreaPickerView: UIPickerView, UIPickerViewDataSource, UIPickerVi
     }
     
     //MARK: - Picker view delegate
-    
     public func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch component {
         case 0:
