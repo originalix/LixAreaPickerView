@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A7B2E867EC700B9FA27798 /* LixAreaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7B78297CEE1062210DED9 /* LixAreaPickerView.swift */; };
+		12A7BBF148B7A4F64FDCDA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7B2703F508347FC4508E3 /* Main.storyboard */; };
+		12A7BCD1B0B183AAB899DE13 /* ChineseSubdivisions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12A7B92822E41DE05B8D9BCD /* ChineseSubdivisions.plist */; };
 		56F681BD1DE7B77300512F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F681BC1DE7B77300512F07 /* AppDelegate.swift */; };
 		56F681BF1DE7B77300512F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F681BE1DE7B77300512F07 /* ViewController.swift */; };
-		56F681C21DE7B77300512F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F681C01DE7B77300512F07 /* Main.storyboard */; };
 		56F681C41DE7B77300512F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F681C31DE7B77300512F07 /* Assets.xcassets */; };
 		56F681C71DE7B77300512F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F681C51DE7B77300512F07 /* LaunchScreen.storyboard */; };
 		56F681D21DE7B77300512F07 /* LixAreaPickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F681D11DE7B77300512F07 /* LixAreaPickerViewTests.swift */; };
@@ -34,10 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12A7B78297CEE1062210DED9 /* LixAreaPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LixAreaPickerView.swift; sourceTree = "<group>"; };
+		12A7B8E6C2859AD1BA482019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12A7B92822E41DE05B8D9BCD /* ChineseSubdivisions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = ChineseSubdivisions.plist; sourceTree = "<group>"; };
 		56F681B91DE7B77200512F07 /* LixAreaPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LixAreaPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F681BC1DE7B77300512F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56F681BE1DE7B77300512F07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56F681C11DE7B77300512F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56F681C31DE7B77300512F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F681C61DE7B77300512F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56F681C81DE7B77300512F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,9 +78,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12A7B187D15EC422AE2F0A00 /* AreaPickView */ = {
+			isa = PBXGroup;
+			children = (
+				12A7B92822E41DE05B8D9BCD /* ChineseSubdivisions.plist */,
+				12A7B78297CEE1062210DED9 /* LixAreaPickerView.swift */,
+			);
+			path = AreaPickView;
+			sourceTree = "<group>";
+		};
 		56F681B01DE7B77200512F07 = {
 			isa = PBXGroup;
 			children = (
+				12A7B187D15EC422AE2F0A00 /* AreaPickView */,
 				56F681BB1DE7B77300512F07 /* LixAreaPickerView */,
 				56F681D01DE7B77300512F07 /* LixAreaPickerViewTests */,
 				56F681DB1DE7B77300512F07 /* LixAreaPickerViewUITests */,
@@ -99,10 +113,10 @@
 			children = (
 				56F681BC1DE7B77300512F07 /* AppDelegate.swift */,
 				56F681BE1DE7B77300512F07 /* ViewController.swift */,
-				56F681C01DE7B77300512F07 /* Main.storyboard */,
 				56F681C31DE7B77300512F07 /* Assets.xcassets */,
 				56F681C51DE7B77300512F07 /* LaunchScreen.storyboard */,
 				56F681C81DE7B77300512F07 /* Info.plist */,
+				12A7B2703F508347FC4508E3 /* Main.storyboard */,
 			);
 			path = LixAreaPickerView;
 			sourceTree = "<group>";
@@ -234,7 +248,8 @@
 			files = (
 				56F681C71DE7B77300512F07 /* LaunchScreen.storyboard in Resources */,
 				56F681C41DE7B77300512F07 /* Assets.xcassets in Resources */,
-				56F681C21DE7B77300512F07 /* Main.storyboard in Resources */,
+				12A7BBF148B7A4F64FDCDA6E /* Main.storyboard in Resources */,
+				12A7BCD1B0B183AAB899DE13 /* ChineseSubdivisions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 			files = (
 				56F681BF1DE7B77300512F07 /* ViewController.swift in Sources */,
 				56F681BD1DE7B77300512F07 /* AppDelegate.swift in Sources */,
+				12A7B2E867EC700B9FA27798 /* LixAreaPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +312,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		56F681C01DE7B77300512F07 /* Main.storyboard */ = {
+		12A7B2703F508347FC4508E3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				56F681C11DE7B77300512F07 /* Base */,
+				12A7B8E6C2859AD1BA482019 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -416,7 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lix.LixAreaPickerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -428,7 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lix.LixAreaPickerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -505,6 +521,7 @@
 				56F681E31DE7B77300512F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56F681E41DE7B77300512F07 /* Build configuration list for PBXNativeTarget "LixAreaPickerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +530,7 @@
 				56F681E61DE7B77300512F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56F681E71DE7B77300512F07 /* Build configuration list for PBXNativeTarget "LixAreaPickerViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +539,7 @@
 				56F681E91DE7B77300512F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
